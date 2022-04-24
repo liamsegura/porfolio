@@ -56,9 +56,6 @@ nav p{
   transition: width 100ms ease-in;
   src: local;
 }
-#nav-dot:hover{
-  width: 20px;
-}
 
 /******************************************
 /* LAYOUT
@@ -119,11 +116,22 @@ nav p{
   a:hover{
     color: rgb(190, 190, 190);
   } 
+  #nav-dot:hover{
+    width: 20px;
+  }
 }
 @media (max-width: 600px) {
 #nav-right{
   flex-basis: 35%;
 }
+#nav-dot{
+  width: 20px;
+}
+.container h1{
+  font-size: 3rem;
+}
+}
+
 @media (max-width: 380px) {
   .container h1{
     font-size: 2.5rem;
