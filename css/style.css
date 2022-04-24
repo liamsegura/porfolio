@@ -113,7 +113,8 @@ nav p{
 /* ADDITIONAL STYLES
 /*******************************************/
 
-@media (min-width: 768px) {
+
+@media (min-width: 900px) {
   nav p:hover{
     text-decoration: underline;
   }
