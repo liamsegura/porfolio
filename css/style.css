@@ -1,21 +1,6 @@
 /******************************************
 /* CSS
 /*******************************************/
-@media (min-width: 900px) {
-  nav p:hover{
-    text-decoration: underline;
-  }
-  a:hover{
-    color: rgb(190, 190, 190);
-  } 
-}
-@supports (-webkit-touch-callout: none) {
-  /* CSS specific to iOS devices */ 
-}
-
-@supports not (-webkit-touch-callout: none) {
-  /* CSS for other than iOS devices */ 
-}
 
 /* Box Model Hack */
 *{
@@ -127,5 +112,21 @@ nav p{
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
-
-
+@media (min-width: 900px) {
+  nav p:hover{
+    text-decoration: underline;
+  }
+  a:hover{
+    color: rgb(190, 190, 190);
+  } 
+}
+@media (max-width: 600px) {
+#nav-right{
+  flex-basis: 35%;
+}
+@media (max-width: 380px) {
+  .container h1{
+    font-size: 2.5rem;
+  }
+}
+}
