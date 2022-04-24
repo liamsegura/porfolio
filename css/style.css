@@ -1,6 +1,21 @@
 /******************************************
 /* CSS
 /*******************************************/
+@media (min-width: 900px) {
+  nav p:hover{
+    text-decoration: underline;
+  }
+  a:hover{
+    color: rgb(190, 190, 190);
+  } 
+}
+@supports (-webkit-touch-callout: none) {
+  /* CSS specific to iOS devices */ 
+}
+
+@supports not (-webkit-touch-callout: none) {
+  /* CSS for other than iOS devices */ 
+}
 
 /* Box Model Hack */
 *{
@@ -11,7 +26,6 @@
 body{
   background-color: white;
   color: black;
-  -webkit-text-size-adjust: 100%;
 }
 a{
   font-style: none;
@@ -115,18 +129,3 @@ nav p{
 /*******************************************/
 
 
-@media (min-width: 900px) {
-  nav p:hover{
-    text-decoration: underline;
-  }
-  a:hover{
-    color: rgb(190, 190, 190);
-  } 
-}
-@supports (-webkit-touch-callout: none) {
-  /* CSS specific to iOS devices */ 
-}
-
-@supports not (-webkit-touch-callout: none) {
-  /* CSS for other than iOS devices */ 
-}
