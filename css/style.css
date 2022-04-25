@@ -293,5 +293,13 @@ a .button{
   .container-one h1{
     font-size: 2.5rem;
   }
+  .info-container-one{
+    display: block;
+    padding-top: 10vh;
+  }
+  .info-container-one h1{
+    display: block;
+    font-size: 2rem;
+  }
 }
 }
