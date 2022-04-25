@@ -6,7 +6,6 @@
 *{
   box-sizing: border-box;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  /* border:2px solid red;  */
 }
 /* main */
 body{
@@ -31,9 +30,15 @@ a{
 .dark-mode p{
   color: white!important;
 }
+.dark-mode span{
+  color: white!important;
+}
 .dark-mode-invert{
   background-color: white!important;
   color: rgb(29, 29, 29)!important;
+}
+.dark-mode footer > section{
+border-top:1px solid rgb(255, 255, 255);
 }
 /* nav bar */
 nav h1{
@@ -162,7 +167,6 @@ nav span{
 }
 .info-container-one p{
   font-size: 1.5rem;
-  margin-bottom: 50px;
 }
 
 .info-container-two{
@@ -181,11 +185,8 @@ nav span{
 .info-container-three{
   display: flex;
   flex-wrap: wrap;
+  height: 80vh;
 }
-.info-container-three{
-  display: flex;
-  flex-wrap: wrap;
-} 
 .info-container-three span{
   font-size: 3rem;
   font-weight: 600;
@@ -197,6 +198,26 @@ nav span{
   flex: 1;
   min-width: 30vw;
   padding: 2vh 2vw;
+}
+
+/* FOOTER */
+.footer-container{
+  display: flex;
+  font-size: 1.5rem;
+  border-top:1px solid rgb(29, 29, 29);
+}
+.footer-container .item{
+
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 50px 10px;
+}
+.footer-container .item a{
+  text-decoration: underline;
+}
+.item > span + span{
+  color: rgb(70, 70, 70);
 }
 /******************************************
 /* ADDITIONAL STYLES
