@@ -143,7 +143,9 @@ nav span{
 /*******************************************/
 
 /* BUTTON */
-
+a .button{
+  transition: none;
+}
 .button{
   padding: 15px 30px;
   background-color: rgb(29, 29, 29);
@@ -152,6 +154,12 @@ nav span{
   font-weight: 350;
   font-size: 1.2rem;
   cursor: pointer;
+  transition:background-color 300ms ease-in;
+}
+
+.button:hover{
+  background-color:rgb(70, 70, 70);
+  color: white;
 }
 
 /* Media query */
