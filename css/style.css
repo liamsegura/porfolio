@@ -311,9 +311,13 @@ a .button{
 }
 .img-container{
   display: block;
+  width: 80%;
 }
 .img-container img{
-  width: 100%;
+  width: 80%;
+}
+.recentwork-container-one{
+  display: block;
 }
 @media (max-width: 600px) {
 #nav-right{
