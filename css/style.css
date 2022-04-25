@@ -144,6 +144,7 @@ nav span{
   display: flex;
   padding-top: 30vh;
   flex: 1;
+  height: 80vh;
 }
 .info-container-one p{
   padding-left: 10vw;
