@@ -313,7 +313,7 @@ a .button{
   display: block;
 }
 .img-container img{
-  width: 70%;
+  width: 100%;
 }
 @media (max-width: 600px) {
 #nav-right{
