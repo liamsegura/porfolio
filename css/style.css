@@ -127,7 +127,7 @@ nav span{
   display: flex;
   /* border:2px solid red; */
   padding-top: 10vh;
-  padding-bottom: 10vh;
+  padding-bottom: 20vh;
 }
 .column h2{
   font-size: 2rem;
@@ -186,6 +186,7 @@ nav span{
 .info-container-three{
   display: flex;
   flex-wrap: wrap;
+  padding-bottom: 20vh;
 }
 .info-container-three span{
   font-size: 3rem;
@@ -272,7 +273,7 @@ a .button{
   display: block;
 }
 .footer-container .item{
-  padding: 30px 0px;
+  padding: 10px 0px;
 }
 @media (max-width: 600px) {
 #nav-right{
