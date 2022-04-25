@@ -10,7 +10,8 @@
 /* main */
 body{
   background-color: white;
-  color: black;
+  color: rgb(29, 29, 29);
+  padding: 5vh 8vw;
 }
 a{
   font-style: none;
@@ -19,7 +20,7 @@ a{
   transition: color 200ms ease-in;
 }
 .dark-mode{
-  background-color: black;
+  background-color: rgb(29, 29, 29);
   color: white;
 }
 
@@ -31,7 +32,7 @@ nav h2{
   font-size: 1rem;
   font-weight: 200;
 }
-nav p{
+nav span{
   font-size: 1.5rem;
   font-weight: 400;
 }
@@ -40,8 +41,6 @@ nav p{
   display: flex;
   align-items: center;
   justify-content: space-between;
-
-  padding: 5vh 8vw;
   line-height: 10px;
 }
 #nav-right{
@@ -98,17 +97,57 @@ nav p{
   display: flex;
   justify-content: flex-start;
   align-items: flex-end;
-  height: 67vh;
-  padding: 4vh 8vw;
+  height: 80vh;
+  padding-bottom: 10vh;
 }
 .container h1{
   font-size: 3.5rem;
   font-weight: 300;
 }
+/* first column */
+.column{
+  display: flex;
+  /* border:2px solid red; */
+  padding-top: 10vh;
+}
+.column h2{
+  font-size: 2rem;
+}
+.column p{
+  font-size: 1.5rem;
+  margin-bottom: 50px;
+}
+.item img{
+  height: 400px;
+  width: 400px;
+  border-radius: 10px;
+}
+.column .item{
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: space-evenly;
+  align-items:center;
+  /* border: 2px solid green; */
+}
 
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
+
+/* BUTTON */
+
+.button{
+  padding: 15px 30px;
+  background-color: rgb(29, 29, 29);
+  color: white;
+  border-radius: 50px;
+  font-weight: 350;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+/* Media query */
 @media (min-width: 900px) {
   nav p:hover{
     text-decoration: underline;
@@ -119,6 +158,13 @@ nav p{
   #nav-dot:hover{
     width: 20px;
   }
+}
+@media (max-width: 800px) {
+.column{
+  display: block;
+}
+.column img{
+  display: none;
 }
 @media (max-width: 600px) {
 #nav-right{
