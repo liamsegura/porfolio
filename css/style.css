@@ -157,11 +157,6 @@ a .button{
   transition:background-color 300ms ease-in;
 }
 
-.button:hover{
-  background-color:rgb(70, 70, 70);
-  color: white;
-}
-
 /* Media query */
 @media (min-width: 900px) {
   nav p:hover{
@@ -172,6 +167,10 @@ a .button{
   } 
   #nav-dot:hover{
     width: 20px;
+  }
+  .button:hover{
+    background-color:rgb(70, 70, 70);
+    color: white;
   }
 }
 @media (max-width: 800px) {
