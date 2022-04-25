@@ -201,9 +201,37 @@ nav span{
   min-width: 30vw;
   padding: 2vh 2vw;
 }
+/* button container below */
 .recent-work-container{
   height: 10vh;
 }
+/* recent work html */
+.recentwork-container-one .item{
+  padding: 10px;
+  font-size: 2rem;
+  padding-top: 10vh;
+}
+.img-container{
+  display: flex;
+  justify-content: space-between;
+}
+.img-container img{
+  width: 48%;
+}
+.recent-work-container-two{
+  padding: 10px;
+  font-size: 2rem;
+  padding-top: 10vh;
+}
+.recentwork-container-two .item{
+  padding: 10px;
+  font-size: 2rem;
+  padding-top: 10vh;
+}
+.recent-work-coming-soon{
+  padding: 20px 0 50px 0;
+}
+
 
 /* FOOTER */
 .footer-container{
@@ -215,6 +243,7 @@ nav span{
   display: flex;
   flex-direction: column;
   padding: 50px 10px;
+  flex: 1;
 }
 .footer-container .item a{
   text-decoration: underline;
@@ -279,6 +308,12 @@ a .button{
 }
 .footer-container .item{
   padding: 10px 0px;
+}
+.img-container{
+  display: block;
+}
+.img-container img{
+  width: 80%;
 }
 @media (max-width: 600px) {
 #nav-right{
