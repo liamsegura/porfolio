@@ -127,6 +127,7 @@ nav span{
   display: flex;
   /* border:2px solid red; */
   padding-top: 10vh;
+  padding-bottom: 10vh;
 }
 .column h2{
   font-size: 2rem;
@@ -185,7 +186,6 @@ nav span{
 .info-container-three{
   display: flex;
   flex-wrap: wrap;
-  height: 80vh;
 }
 .info-container-three span{
   font-size: 3rem;
@@ -207,7 +207,6 @@ nav span{
   border-top:1px solid rgb(29, 29, 29);
 }
 .footer-container .item{
-
   display: flex;
   flex-direction: column;
   flex: 1;
@@ -268,6 +267,12 @@ a .button{
 .grid{
   min-width: 50vw;
   padding: 2vh 0vw;
+}
+.footer-container{
+  display: block;
+}
+.footer-container .item{
+  padding: 30px 0px;
 }
 @media (max-width: 600px) {
 #nav-right{
