@@ -258,6 +258,7 @@ a .button{
  
 .info-container-one{
   display: block;
+  padding-top: 25vh;
 }
 .column{
   display: block;
