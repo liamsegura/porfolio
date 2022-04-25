@@ -19,9 +19,14 @@ a{
   color: inherit;
   transition: color 200ms ease-in;
 }
+/* darkmode */
 .dark-mode{
-  background-color: rgb(29, 29, 29);
-  color: white;
+  background-color: rgb(29, 29, 29)!important;
+  color: white!important;
+}
+.dark-mode-invert{
+  background-color: white!important;
+  color: rgb(29, 29, 29)!important;
 }
 
 /* nav bar */
@@ -59,7 +64,9 @@ nav span{
 /******************************************
 /* LAYOUT
 /*******************************************/
-/* MAIN SECTION */
+/* MAIN SECTIONS */
+
+/* SECTION ONE */
 .fade-in-text {
   display: inline-block;
   animation: fadeIn linear 2s;
@@ -93,14 +100,14 @@ nav span{
   0% {opacity:0;}
   100% {opacity:1;}
 }
-.container{
+.container-one{
   display: flex;
   justify-content: flex-start;
   align-items: flex-end;
   height: 80vh;
   padding-bottom: 10vh;
 }
-.container h1{
+.container-one h1{
   font-size: 3.5rem;
   font-weight: 300;
 }
@@ -173,13 +180,13 @@ nav span{
 #nav-dot{
   width: 20px;
 }
-.container h1{
+.container-one h1{
   font-size: 3rem;
 }
 }
 
 @media (max-width: 380px) {
-  .container h1{
+  .container-one h1{
     font-size: 2.5rem;
   }
 }
