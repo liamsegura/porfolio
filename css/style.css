@@ -1,7 +1,9 @@
 /******************************************
 /* CSS
 /*******************************************/
-
+@-ms-viewport{
+  width: device-width;
+}
 /* Box Model Hack */
 *{
   box-sizing: border-box;
