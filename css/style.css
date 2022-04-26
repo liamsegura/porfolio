@@ -322,6 +322,39 @@ a .button{
   display: block;
 }
 
+@media all and (max-width:850px) and (max-width:550px) and (max-device-width:320px) {
+  .info-container-one{
+    display: block;
+    padding-top: 25vh;
+  }
+  .column{
+    display: block;
+  }
+  .column img{
+    display: none;
+  }
+  .grid{
+    min-width: 50vw;
+    padding: 2vh 0vw;
+  }
+  .footer-container{
+    display: block;
+    padding-top: 20px;
+  }
+  .footer-container .item{
+    padding: 10px 0px;
+  }
+  .img-container{
+    display: block;
+    width: 80%;
+  }
+  .img-container img{
+    width: 80%;
+  }
+  .recentwork-container-one{
+    display: block;
+  }
+}
 /* Portrait */
 @media screen 
   and (device-width: 412px) 
@@ -329,38 +362,7 @@ a .button{
   and (-webkit-device-pixel-ratio: 3.5) 
   and (orientation: portrait) {
 
-    .info-container-one{
-      display: block;
-      padding-top: 25vh;
-    }
-    .column{
-      display: block;
-    }
-    .column img{
-      display: none;
-    }
-    .grid{
-      min-width: 50vw;
-      padding: 2vh 0vw;
-    }
-    .footer-container{
-      display: block;
-      padding-top: 20px;
-    }
-    .footer-container .item{
-      padding: 10px 0px;
-    }
-    .img-container{
-      display: block;
-      width: 80%;
-    }
-    .img-container img{
-      width: 80%;
-    }
-    .recentwork-container-one{
-      display: block;
-    }
-    
+      
 }
 
 /* Landscape */
