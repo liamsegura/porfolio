@@ -139,7 +139,7 @@ nav span{
   font-size: 1.5rem;
   margin-bottom: 50px;
 }
-.item img{
+.main-img{
   border-radius: 10px;
   width:70%;
 }
@@ -158,7 +158,7 @@ nav span{
   display: flex;
   padding-top: 30vh;
   flex: 1;
-  height: 80vh;
+  height: 90vh;
 }
 .info-container-one p{
   padding-left: 10vw;
@@ -171,6 +171,17 @@ nav span{
 }
 .info-container-one p{
   font-size: 1.5rem;
+}
+.info-container-one-column{
+  display: flex;
+  padding-left: 10vh;
+  align-items: center;
+}
+/* headshot */
+.headshot{
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
 }
 
 .info-container-two{
@@ -233,8 +244,12 @@ nav span{
 .recent-work-coming-soon{
   padding: 20px 0 50px 0;
 }
-
-
+.label:after{
+  content:'Recent work';
+}
+.label:hover:after{
+  content:'Coming soon';
+}
 /* FOOTER */
 .footer-container{
   display: flex;
@@ -321,7 +336,15 @@ a .button{
 .recentwork-container-one{
   display: block;
 }
-
+.info-container-one-column{
+  display: block;
+  padding-left: 0vh;
+  align-items: center;
+}
+/* headshot */
+.headshot{
+  display: none;
+}
 @media all and (max-width:850px) and (max-width:550px) and (max-device-width:320px) {
   .info-container-one{
     display: block;
