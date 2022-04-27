@@ -1,6 +1,35 @@
 /******************************************
 /* CSS
 /*******************************************/
+:root{
+  --clr-light:white;
+  --clr-dark:rgb(29, 29, 29);
+  --clr-mid: rgb(70, 70, 70);
+  --clr-hover: white;
+  --clr-primary: var(light);
+
+  /* --clr-secondary: var(mid); */
+  
+  --foreground: var(--clr-dark);
+  --paragraph: var(--clr-mid);
+  --background: var(--clr-light);
+  --clr-bghover: var(--clr-mid);
+}
+.darkmode{
+  --clr-light:white;
+  --clr-dark:rgb(29, 29, 29);
+  --clr-mid: rgb(70, 70, 70);
+  --clr-primary: var(light);
+  --clr-secondary: var(mid);
+  --clr-hover:  var(--clr-dark);
+
+  --foreground: var(--clr-light);
+  --paragraph: var(--clr-light);
+  --background: var(--clr-dark);
+  --bghover: var(--clr-light);
+
+}
+
 @-ms-viewport{
   width: device-width;
 }
@@ -9,14 +38,18 @@
   box-sizing: border-box;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
+/* root */
+
+
+
 /* main */
 body{
-  background-color: white;
-  color: rgb(29, 29, 29);
+  background-color: var(--background);
+  color: var(--foreground);
   padding: 5vh 8vw;
 }
 body p{
-  color:rgb(70, 70, 70)
+  color:var(--paragraph)
 }
 a{
   font-style: none;
@@ -25,7 +58,7 @@ a{
   transition: color 200ms ease-in;
 }
 /* darkmode */
-.dark-mode{
+/* .dark-mode{
   background-color: rgb(29, 29, 29)!important;
   color: white!important;
 }
@@ -41,7 +74,7 @@ a{
 }
 .dark-mode footer > section{
 border-top:1px solid rgb(255, 255, 255);
-}
+} */
 /* nav bar */
 nav h1{
   font-size: 1.5rem; 
@@ -67,12 +100,20 @@ nav span{
   flex-basis: 20%;
   align-items: center;
 }
-#nav-dot{
+.nav-dot{
+  width: 20px;
+  height: 20px;
+  background-color: var(--foreground);
+  border-radius: 50%;
+  cursor:pointer;
+  transition: padding 300ms ease;
+}
+/* #nav-dot{
   width: 15px;
   cursor:pointer;
   transition: width 100ms ease-in;
   src: local;
-}
+} */
 
 /******************************************
 /* LAYOUT
@@ -263,7 +304,7 @@ nav span{
   text-decoration: underline;
 }
 .item > span + span{
-  color: rgb(70, 70, 70);
+  color: var(--paragraph);
 }
 /******************************************
 /* ADDITIONAL STYLES
@@ -275,8 +316,8 @@ a .button{
 }
 .button{
   padding: 15px 30px;
-  background-color: rgb(29, 29, 29);
-  color: white;
+  background-color: var(--foreground);
+  color:var(--background);
   border-radius: 50px;
   font-weight: 350;
   font-size: 1.2rem;
@@ -290,14 +331,14 @@ a .button{
     text-decoration: underline;
   }
   a:hover{
-    color: rgb(190, 190, 190);
+    color: var(--clr-hover)
   } 
-  #nav-dot:hover{
-    width: 20px;
+  .nav-dot:hover{
+   padding: 12px;
   }
   .button:hover{
-    background-color:rgb(70, 70, 70);
-    color: white;
+    background-color:var(--clr-bghover);
+    color: var(--clr-hover);
   }
 }
 @media (max-width: 1000px) {

@@ -1,27 +1,44 @@
-document.querySelector('img').addEventListener('click', darkMode)
+let darkMode = localStorage.getItem('darkMode')
+const darkModeToggle = document.querySelector('#dark-mode-toggle');
 
-function darkMode(){
-  let dark = document.querySelector('.dark')
-  let darkButton = document.querySelector('.button')
-  dark.classList.toggle('dark-mode')
-  darkButton.classList.toggle('dark-mode-invert')
+console.log(darkMode)
+
+//check if darkMode is enabled
+//if enabled, turn it off
+//if disabled, turn it on
+const enableDarkMode = () => {
+  // 1. add class darkmode to the body
+  document.body.classList.add('darkmode')
+  // 2. update darkmode in local storage
+  localStorage.setItem('darkMode', 'enabled')
 }
-  var on = "assets/images/nav-dot-white.png"
-  var off = "assets/images/nav-dot-black.png"
-  var state = false;
-  var img = document.getElementById("nav-dot");
-  
-  img.onclick = function(){
-    if(state){
-      img.src = off;
-      state = false;
-    }
-    else{
-      img.src = on;
-      state = true;
-    }
+
+const disableDarkMode = () => {
+  // 1. remove class darkmode to the body
+  document.body.classList.remove('darkmode')
+  // 2. update darkmode in local storage
+  localStorage.setItem('darkMode', 'null')
+}
+
+if (darkMode === "enabled"){
+  enableDarkMode()
+}else{
+  disableDarkMode()
+}
+darkModeToggle.addEventListener('click', () => {
+    darkMode = localStorage.getItem('darkMode')
+    if (darkMode !== 'enabled'){
+    enableDarkMode()
+    console.log(darkMode)
+  }else{
+    disableDarkMode()
+    console.log(darkMode)
   }
-document.querySelector('.buttonComingSoon').addEventListener('click', buttonText)
+})
+
+
+const comingSoonButton = document.querySelector('.buttonComingSoon')
+comingSoonButton.addEventListener('click', buttonText)
 
 function buttonText(){
   document.querySelector('.buttonComingSoon').innerText = "Coming soon"
