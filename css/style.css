@@ -244,11 +244,8 @@ nav span{
 .recent-work-coming-soon{
   padding: 20px 0 50px 0;
 }
-.label:after{
-  content:'Recent work';
-}
-.label:hover:after{
-  content:'Coming soon';
+.buttonComingSoon{
+  content: "Recent work";
 }
 /* FOOTER */
 .footer-container{

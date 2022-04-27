@@ -21,3 +21,8 @@ function darkMode(){
       state = true;
     }
   }
+document.querySelector('.buttonComingSoon').addEventListener('click', buttonText)
+
+function buttonText(){
+  document.querySelector('.buttonComingSoon').innerText = "Coming soon"
+}
