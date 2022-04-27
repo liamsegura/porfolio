@@ -5,28 +5,30 @@
   --clr-light:white;
   --clr-dark:rgb(29, 29, 29);
   --clr-mid: rgb(70, 70, 70);
-  --clr-hover: white;
+  --clr-hover: rgb(109, 109, 109);
   --clr-primary: var(light);
 
   /* --clr-secondary: var(mid); */
-  
+  --hover-button-text: var(--clr-light);
   --foreground: var(--clr-dark);
   --paragraph: var(--clr-mid);
   --background: var(--clr-light);
-  --clr-bghover: var(--clr-mid);
+  --bghover: var(--clr-mid);
 }
 .darkmode{
   --clr-light:white;
   --clr-dark:rgb(29, 29, 29);
   --clr-mid: rgb(70, 70, 70);
+  --clr-hover-bg: rgb(189, 189, 189);
   --clr-primary: var(light);
   --clr-secondary: var(mid);
-  --clr-hover:  var(--clr-dark);
-
+  
+  
+  --hover-button-text: var(--clr-dark);
   --foreground: var(--clr-light);
   --paragraph: var(--clr-light);
   --background: var(--clr-dark);
-  --bghover: var(--clr-light);
+  --bghover: var(--clr-hover-bg);
 
 }
 
@@ -331,14 +333,14 @@ a .button{
     text-decoration: underline;
   }
   a:hover{
-    color: var(--clr-hover)
+    color: var(--bghover)
   } 
   .nav-dot:hover{
    padding: 12px;
   }
   .button:hover{
-    background-color:var(--clr-bghover);
-    color: var(--clr-hover);
+    background-color:var(--bghover);
+    color: var(--hover-button-text);
   }
 }
 @media (max-width: 1000px) {
