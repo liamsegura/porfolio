@@ -360,7 +360,7 @@ h1{
 
 .info-container-one{
   display: block;
-  padding-top: 8vh;
+  padding-top: 5vh;
   
 }
 .info-container-one h1{
@@ -482,7 +482,7 @@ padding-left: 0;
 
 
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
 #nav-right{
   flex-basis: 35%;
 }
