@@ -217,18 +217,18 @@ nav span{
 .info-container-one h1{
   font-size: 2.5rem;
   width: 100%;
-  padding-right: 0vw;
+  padding-right: 4vw;
   padding-left:0vw;
 }
 .info-container-one p{
   font-size: 1.5rem;
-    padding-bottom: 2rem;
+    padding-bottom: 4rem;
     line-height: 2rem;
   }
   
 .info-container-one-column{
   /* display: flex; */
-  padding-top: 20vh;
+  padding-top: 12vh;
   padding-bottom: 10vh;
   align-items: center;
 }
