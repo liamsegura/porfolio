@@ -496,6 +496,7 @@ padding-left: 0;
   display: block;
   font-size: 1.8rem;
   padding-left: 0;
+  padding-right: 0;
 }
 .info-container-one p{
   padding-bottom: 3rem;
@@ -503,7 +504,9 @@ padding-left: 0;
   line-height: 1.4rem;
   width: 100%;
 }
-
+.flex{
+  width: 100%;
+}
 }
 
 @media (max-width: 380px) {
