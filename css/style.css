@@ -361,7 +361,7 @@ h1{
 .info-container-one{
   display: block;
   padding-top: 8vh;
-
+  
 }
 .info-container-one h1{
 padding-left: 0;
@@ -501,6 +501,7 @@ padding-left: 0;
   padding-bottom: 3rem;
   font-size: 1rem;
   line-height: 1.4rem;
+  width: 100%;
 }
 
 }
