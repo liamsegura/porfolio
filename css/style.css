@@ -498,6 +498,7 @@ padding-left: 0;
   font-size: 1rem;
   line-height: 1.4rem;
   width: 100%;
+  padding-right: 0;
 }
 .flex{
   width: 100%;
@@ -511,7 +512,7 @@ padding-left: 0;
 }
 .portfolio-container{
   display: block;
-  padding-top: 4rem;
+  padding-top: 1rem;
   padding-bottom: 10vh;
 }
 .portfolio-container h1{
