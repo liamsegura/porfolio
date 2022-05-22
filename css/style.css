@@ -100,6 +100,14 @@ nav span{
   justify-content: space-between;
   line-height: 10px;
 }
+.nav-container-portfolio{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  line-height: 10px;
+  padding-bottom: 2rem;
+}
+
 #nav-right{
   display: flex;
   justify-content: space-around;
@@ -208,7 +216,7 @@ nav span{
   flex: 1;
 }
 .info-container-one p{
-  padding-right: 10vw;
+  padding-right: 25vw;
   padding-bottom: 2rem;
   padding-top: 2rem;
   width: 90%;
@@ -299,7 +307,27 @@ a .button{
   cursor: pointer;
   transition:background-color 300ms ease-in;
 }
+.portfolio-container{
+  display: flex;
+  padding-top: 4rem;
+  padding-bottom: 10vh;
+}
+.portfolio-container h1{
+  font-size: 2rem;
+}
+.portfolio-container p{
+  padding-bottom: 2.5rem;
 
+}
+.portfolio-container img{
+  width: 50%;
+  border-radius: 15px;
+  /* border: 0.5px solid black; */
+  box-shadow: 10px 10px 10px rgb(0,0,0,0.1);
+}
+.project-info{
+  padding-left: 2rem;
+}
 /* Media query */
 @media (min-width: 900px) {
   nav p:hover{
@@ -315,6 +343,7 @@ a .button{
     background-color:var(--bghover);
     color: var(--hover-button-text);
   }
+
 }
 @media (max-width: 1000px) {
 h1{
@@ -366,6 +395,8 @@ padding-left: 0;
 .headshot{
   display: none;
 }
+
+}
 @media all and (max-width:850px) and (max-width:550px) and (max-device-width:320px) {
 
   .info-container-one h1{
@@ -412,6 +443,7 @@ padding-left: 0;
   .recentwork-container-one{
     display: block;
   }
+  
 }
 /* Portrait */
 @media screen 
@@ -470,6 +502,33 @@ padding-left: 0;
 .flex{
   width: 100%;
 }
+.nav-container-portfolio{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  line-height: 10px;
+  padding-bottom: 0rem;
+}
+.portfolio-container{
+  display: block;
+  padding-top: 4rem;
+  padding-bottom: 10vh;
+}
+.portfolio-container h1{
+  font-size: 2rem;
+}
+.portfolio-container p{
+  padding-bottom: 2.5rem;
+
+}
+.portfolio-container img{
+  width: 100%;
+  border-radius: 15px;
+  /* border: 0.5px solid black; */
+}
+.project-info{
+  padding-left: 1rem;
+}
 }
 
 @media (max-width: 380px) {
@@ -486,5 +545,4 @@ padding-left: 0;
     font-size: 1.2rem;
     padding-left: 0;
   }
-}
 }

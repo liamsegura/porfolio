@@ -37,9 +37,13 @@ darkModeToggle.addEventListener('click', () => {
 })
 
 
-const comingSoonButton = document.querySelector('.buttonComingSoon')
-comingSoonButton.addEventListener('click', buttonText)
+const comingSoonButton = document.querySelectorAll('.buttonComingSoon')
+comingSoonButton.forEach(e => e.addEventListener('click', () => {
+  e.innerHTML = "Coming soon"
+}))
 
-function buttonText(){
-  document.querySelector('.buttonComingSoon').innerText = "Coming soon"
-}
+
+
+// function buttonText(){
+//   document.querySelectorAll('.buttonComingSoon').innerText = "Coming soon"
+// }
