@@ -494,11 +494,12 @@ padding-left: 0;
   padding-right: 0;
 }
 .info-container-one p{
-  padding-bottom: 3rem;
-  font-size: 1rem;
-  line-height: 1.4rem;
+  padding-bottom: 2.5rem;
+  font-size: 1.3rem;
+  line-height: 1.6rem;
   width: 100%;
   padding-right: 0;
+  padding-top: 0;
 }
 .flex{
   width: 100%;
