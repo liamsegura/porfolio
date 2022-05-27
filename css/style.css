@@ -506,6 +506,9 @@ padding-left: 0;
 .container-one h1{
   font-size: 3rem;
 }
+.info-container-one{
+  padding-top: 0;
+}
 .info-container-one h1{
   display: block;
   font-size: 2rem;
