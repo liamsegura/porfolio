@@ -373,7 +373,7 @@ h1{
 .info-container-one{
   display: block;
   padding-top: 5vh;
-  
+  padding-bottom: 4rem;
 }
 .info-container-one h1{
 padding-left: 0;
