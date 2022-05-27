@@ -174,7 +174,6 @@ nav span{
   align-items: flex-end;
   height: 80vh;
   width: 100%;
-  padding-bottom: 10vh;
 }
 .container-one h1{
   font-size: 3.5rem;
@@ -237,7 +236,6 @@ nav span{
 .info-container-one-column{
   /* display: flex; */
   padding-top: 12vh;
-  padding-bottom: 10vh;
   align-items: center;
 }
 /* headshot */
@@ -310,7 +308,6 @@ a .button{
 .portfolio-container{
   display: flex;
   padding-top: 4rem;
-  padding-bottom: 10vh;
 }
 .portfolio-container h1{
   font-size: 2rem;
@@ -537,7 +534,6 @@ padding-left: 0;
 .portfolio-container{
   display: block;
   padding-top: 1rem;
-  padding-bottom: 10vh;
 }
 .portfolio-container h1{
   font-size: 2rem;
@@ -563,7 +559,7 @@ padding-left: 0;
   font-size: 2rem;
 }
 .project-container p{
-  padding-bottom: 1.5rem;
+  padding-bottom: 2.5rem;
 
 }
 .project-container img{
@@ -583,7 +579,6 @@ padding-left: 0;
   .info-container-one{
     display: block;
     padding-top: 10vh;
-    padding-bottom: 50px;
   }
   .info-container-one h1{
     display: block;
@@ -602,4 +597,8 @@ img {
   width: 100%;
   height: auto;
   display: block;
+}
+
+footer{
+  margin-top: 4rem;
 }
