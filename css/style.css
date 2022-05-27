@@ -228,7 +228,6 @@ nav span{
   padding-left:0vw;
 }
 .info-container-one p{
-  font-size: 1.5rem;
     padding-bottom: 4rem;
     line-height: 2rem;
   }
@@ -509,13 +508,12 @@ padding-left: 0;
 }
 .info-container-one h1{
   display: block;
-  font-size: 1.8rem;
+  font-size: 2rem;
   padding-left: 0;
   padding-right: 0;
 }
 .info-container-one p{
   padding-bottom: 2.5rem;
-  font-size: 1.3rem;
   line-height: 1.6rem;
   width: 100%;
   padding-right: 0;
