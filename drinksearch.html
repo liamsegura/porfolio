@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="utf-8">
+    	<meta name="description" content="This is where your description goes">
+    	<meta name="keywords" content="one, two, three">
+		<meta name="viewport" content="width=device-width, user-scalable=no">
+		<title>Liam Segura | portfolio</title>
+
+		<!-- external CSS link -->
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body class="dark">
+		<nav class="nav-container-portfolio">
+			<section id="nav-left">
+				<a href="/index.html"><h1>Liam Segura</h1></a>
+				<a href="/index.html"><h2>Full-Stack Developer</h2></a>
+			</section>
+			<section id="nav-right">
+				<a href="info.html"><span>info</span></a>
+				<div 
+					 id="dark-mode-toggle"
+					 class="dark-mode-toggle nav-dot"
+					 aria-label="toggle dark mode">
+				</div>
+			</section>	
+		</nav>
+		<main class="fade-in-text">
+			<section class="project-container">
+
+				<div class="flex-item">
+				<img src="/assets/images/drinksearchdesktop.jpg">
+				</div>
+
+				<div class="flex-item">
+				<h1>drinksearch</h1>
+                <p>Customers scan a bar code, and are sent to <a href="#">drinksearch<a> where they can choose from up to 100 drinks from the data base, and see which ingredients are used as well as how they're made.</p>
+					<a href="https://drinksearchh.netlify.app" class="button">View app</a>	
+				</div>
+				
+			</section>
+			<section class="project-container">
+
+                <div class="flex-item">
+					<h1>Objective</h1>
+					<p>The objective for this project was to make use of an extensive data base of information, using an api to fetch this data and append specific information from these objects to the DOM.
+
+						I wanted to keep this web app nice and simple to use, all created on a single HTML file and with a minimal UI.</p>	
+				</div>
+				<div class="flex-item">
+				<img src="/assets/images/mobile.png">
+				</div>
+			</section>
+			<section class="project-container">
+				
+                <div class="flex-item">
+					<h1>Techs used</h1>
+					<p>I decided to stick with vanilla HTML, CSS and JavaScript for this project as I felt there was no need to bring in any frameworks or libraries, plus I like a challange.</p>
+				</div>
+				<div class="flex-item">
+				<!-- <img src="/assets/images/drinksearchdesktop.jpg"> -->
+				</div>
+			</section>
+			<section class="project-container">
+                <div class="flex-item">
+					<h1>The project </h1>
+				<p>To begin this project, I had a design in mind and got started with implementing the functionality. My plan was to have a multiple search option in the navigation bar, options include: Dynamic search bar, A-Z, Spirits and random drink selection.</p>
+				<p>Once a value is entered, a list is then appended using literal HTML blocks in JavaScript. To make these newly created informational cards appear above the hero section, I utilised the CSS property z-index heavily. This was also replicated for the modal when clicking on these cards, a closer look at the selected item will appear, but with additional information.</p>
+				
+			</div>
+				<div class="flex-item">
+				<img src="/assets/images/Screenshot 2022-05-27 at 11.29.44.png">
+				</div>
+			</section>
+			<section class="project-container">
+				
+				<div class="flex-item">
+				<h1>Issues</h1>
+				<p>I ran into a few issues with the API, to make use of the information needed, I first needed to make a search for the specific ID, and then make an additional search using the ID as a parameter. Other issues mostly included CSS as everything is essentially floating above one another. Mobile soft keyboard needed to be manually closed on scroll, I used JavaScript to achieve this as well as setting a timeout on the dynamic search to avoid issues when typing fast.</p>
+				</div>
+				<div class="flex-item">
+					<img src="/assets/images/Screenshot 2022-05-27 at 11.30.32.png">
+					<img src="/assets/images/Screenshot 2022-05-27 at 11.30.11.png">
+				</div>
+					
+			</section>
+			<section class="project-container">
+				<div class="flex-item">
+					<img src="/assets/images/howto-find-notification-center-ios-3.jpg">
+					</div>
+					<div class="flex-item">
+						<img src="/assets/images/design.png">
+						</div>
+				<div class="flex-item">
+				<h1>Designing the end product 
+				</h1>
+				<p>For the design, I was inspired by the iOS Notification Center, the glass above a blurred background seemed like a fitting model. I then did some research and landed on the Mojito as the main attraction for this app. And with that in mind, I designed this fully responsive app using Figma. </p>
+				<a href=portfolio.html class="button">Portfolio</a>		
+			</div>
+			
+			</section>
+			
+			
+            <footer>
+                <section class="footer-container dark">
+                    <section class="item">
+                        <span>Liam Segura</span>
+                        <span class="dark">Full-Stack Software Engineer</span>
+                    </section>
+                    <section class="item">
+                        <span>Brighton</span>
+                        <a href="mailto: liamdiegosegura@gmail.com" target="_blank"" target="__black">liamdiegosegura@gmail.com</a>
+                    </section>
+                    <section class="item">
+                        <a href="https://github.com/liamsegura" target="_blank">Github</a>
+                        <a href="https://www.linkedin.com/in/liam-segura-644694235/" target="_blank">LinkedIn</a>
+                    </section>
+                </section>
+            </footer> 
+		</main>
+		<script src="/js/main.js"></script>
+	</body>
+</html>
