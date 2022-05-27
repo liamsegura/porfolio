@@ -307,7 +307,7 @@ a .button{
 }
 .portfolio-container{
   display: flex;
-  padding-top: 4rem;
+  padding-bottom: 4rem;
 }
 .portfolio-container h1{
   font-size: 2rem;
@@ -533,7 +533,7 @@ padding-left: 0;
 }
 .portfolio-container{
   display: block;
-  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 .portfolio-container h1{
   font-size: 2rem;
