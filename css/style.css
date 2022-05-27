@@ -353,7 +353,11 @@ a .button{
   padding-top: 20px;
   justify-content: space-between;
 }
-/* Media query */
+footer{
+  margin-top: 6rem;
+}
+/* M
+edia query */
 @media (min-width: 900px) {
   nav p:hover{
     text-decoration: underline;
@@ -590,6 +594,9 @@ padding-left: 0;
   padding-top: 20px;
   justify-content: space-between;
 }
+footer{
+  margin-top: 4rem;
+}
 }
 
 @media (max-width: 380px) {
@@ -615,9 +622,7 @@ img {
   display: block;
 }
 
-footer{
-  margin-top: 4rem;
-}
+
 
 .img-width{
   width: 60%!important ;
