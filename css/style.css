@@ -347,6 +347,12 @@ a .button{
 .project-info{
   padding-left: 2rem;
 }
+.flex-item {
+  padding: 40px;
+ flex-basis: 100%;
+  padding-top: 20px;
+  justify-content: space-between;
+}
 /* Media query */
 @media (min-width: 900px) {
   nav p:hover{
@@ -578,6 +584,12 @@ padding-left: 0;
 .project-info{
   padding-left: 1rem;
 }
+.flex-item {
+  padding: 10px;
+ flex-basis: 100%;
+  padding-top: 20px;
+  justify-content: space-between;
+}
 }
 
 @media (max-width: 380px) {
@@ -595,12 +607,7 @@ padding-left: 0;
   }
 }
 
-.flex-item {
-  padding: 10px;
- flex-basis: 100%;
-  padding-top: 20px;
-  justify-content: space-between;
-}
+
 
 img {
   width: 100%;
