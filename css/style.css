@@ -172,7 +172,7 @@ nav span{
   display: flex;
   justify-content: flex-start;
   align-items: flex-end;
-  height: 70vh;
+  height: 75vh;
   width: 100%;
 }
 .container-one h1{
@@ -503,6 +503,13 @@ padding-left: 0;
 #nav-dot{
   width: 20px;
 }
+.container-one{
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  height: 70vh;
+  width: 100%;
+}
 .container-one h1{
   font-size: 3rem;
 }
@@ -590,8 +597,9 @@ padding-left: 0;
 
 .flex-item {
   padding: 10px;
- flex-basis: 40%;
+ flex-basis: 100%;
   padding-top: 20px;
+  justify-content: space-between;
 }
 
 img {
@@ -602,4 +610,9 @@ img {
 
 footer{
   margin-top: 4rem;
+}
+
+.img-width{
+  width: 60%!important ;
+  margin-left: 10%;
 }
