@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="utf-8">
+		<meta name="description" content="portfolio">
+    	<meta name="keywords" content="one, two, three">
+		<meta name="viewport" content="width=device-width, user-scalable=no">
+		<title>Liam Segura | portfolio</title>
+
+		<!-- external CSS link -->
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body class="dark">
+		<nav class="nav-container-portfolio">
+			<section id="nav-left">
+				<a href="/index.html"><h1>Liam Segura</h1></a>
+				<a href="/index.html"><h2>Full-Stack Developer</h2></a>
+			</section>
+			<section id="nav-right">
+				<a href="info.html"><span>info</span></a>
+				<div 
+					 id="dark-mode-toggle"
+					 class="dark-mode-toggle nav-dot"
+					 aria-label="toggle dark mode">
+				</div>
+			</section>	
+		</nav>
+		<main class="fade-in-text">
+			<h1>Security Monitoring System</h1>
+			<section class="project-container">
+
+
+				<div class="flex-item">
+				<img src="/assets/images/monitoringsystem/monitorMain.jpg">
+				</div>
+
+				<div class="flex-item">
+				<p>Full-stack application with a secure login for GDPR compliance used for storing sensitive information as well as tracking for welfare concerns. This app was created for a security company, specialising in welfare.</p>
+                <p>This company will often have contracts with clients such as Brighton & Hove council, to man emergency accommodations and monitor the welfare of the vulnerable residents, from the contracts start to end, this app is used to add a new site when a contract starts, allocate new residents to empty rooms, as well as ensuring the well-being of each and every current resident. </p>
+						
+				</div>
+				
+			</section>
+			<section class="project-container">
+
+                <div class="flex-item">
+					<h1>Objective</h1>
+					<p>The client required a secure login, and full-stack capabilities. Multiple sections for creating, storing and updating documents with the use of a relational database. All with an intentional and minimal UI/UX design which is fully responsive for the best user experience.</p>	
+				</div>
+				<div class="flex-item">
+				<img class="img-width" src="/assets/images/monitoringsystem/monitoringMobileresident.jpg">
+				</div>
+			</section>
+			<section class="project-container">
+				
+                <div class="flex-item">
+					<h1>Tech used</h1>
+					<p>Built in JavaScript with Node and Mongodb’s Mongoose, as well as ejs as a view engine.</p>
+				</div>
+				<div class="flex-item">
+				<!-- <img src="/assets/images/drinksearchdesktop.jpg"> -->
+				</div>
+			</section>
+			<section class="project-container">
+                <div class="flex-item">
+					<h1>The project </h1>
+				
+				<p>I began drafting my models for the database, these included: User, Building, Resident and Update models. With the use of Mongodb’s change stream, I was able to listen for any time a database model was changed in anyway and push that information into an array to be used in my nav section. Which was a partial, rendered with ejs.</p>
+
+				<p>Both building and resident models are relational, when a building is created, a number of rooms is entered via a HTML form, this is then sent to the backend and converted into an array of objects before creation. These array of objects are important as the information when creating a resident is assigned to a specific room number within this array with the use of the push() method. A resident is also created within a building and is assigned the buildings unique object id. With the use of mongooses populate() I am able to dynamically render this information with ejs.
+
+				<p>A tracking system is used to document any time a resident is seen, whether they are in or out and at what time, this is for the welfare of vulnerable residents that live in these emergency accommodations. I created a property on the resident schema for this, creating a new Date() on the click of a button and storing that inside an array, as well as if they are in or out.
+
+				<p>When a resident moves out of the accommodation, his details are moved onto a checkout page along with the checkout date for future reference.</p>
+			</div>
+				<div class="flex-item">
+				<img src="/assets/images/monitoringsystem/monitorBuilding.jpg">
+				</div>
+			</section>
+			<section class="project-container">
+				
+				<div class="flex-item">
+				<h1>Issues</h1>
+				<p>My biggest issues were deciding on a database, and which structure to use. The data is relational so a SQL database would have been an easier solution but with Mongodb’s mongoose, I was able to construct my database with an explicit relationship between my Mongodb documents.</p>
+				</div>
+			</div>
+			<div class="flex-item">
+			<img class="img-width" src="/assets/images/monitoringsystem/monitoringCODEmodes.jpg">
+			</div>
+					
+			</section>
+			<section class="project-container">
+				<div class="flex-item">
+					<h1>In conclusion</h1>
+			
+						<img src="/assets/images/monitoringsystem/monitoringALERT.jpg">
+					</div>
+				<div class="flex-item">
+				<p>This was my first large project alone which made use of a relational database with 4 collections as well as many different routes and functionalities. I will most certainly be using this stack in future projects.</p>
+				<a href="http://monitoring-system-demo.herokuapp.com" target="_blank" class="button">View app</a>
+				<a href="https://github.com/liamsegura/oop-monitoring-system" class="button">Code</a>	
+				<a href=portfolio.html class="button">Portfolio</a>	
+					
+				
+		
+					</div>
+			</section>
+			
+			
+            <footer>
+                <section class="footer-container dark">
+                    <section class="item">
+                        <span>Liam Segura</span>
+                        <span class="dark">Full-Stack Software Engineer</span>
+                    </section>
+                    <section class="item">
+                        <span>Brighton</span>
+                        <a href="mailto: liamdiegosegura@gmail.com" target="_blank"" target="__black">liamdiegosegura@gmail.com</a>
+                    </section>
+                    <section class="item">
+                        <a href="https://github.com/liamsegura" target="_blank">Github</a>
+                        <a href="https://www.linkedin.com/in/liam-segura-644694235/" target="_blank">LinkedIn</a>
+                    </section>
+                </section>
+            </footer> 
+		</main>
+		<script src="/js/main.js"></script>
+	</body>
+</html>

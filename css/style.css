@@ -295,10 +295,10 @@ a .button{
   transition: none;
 }
 .button{
-  padding: 15px 30px;
+  padding: 8px 15px;
   background-color: var(--foreground);
   color:var(--background);
-  border-radius: 50px;
+  border-radius: 12px;
   font-weight: 350;
   font-size: 1.2rem;
   cursor: pointer;
